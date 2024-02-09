@@ -1,0 +1,87 @@
+<!-- Cheatsheet for box positioning -->
+<!DOCTYPE html>
+<html>
+        <head>
+            <link href="styles.css" rel = "stylesheet">
+            <title>CSS Box Model Table</title>
+        </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="header"><h1>CSS Box Model Reference</h1></div>
+            <div><h2>Position Attributes</h2></div>
+
+            <table class="top-table">
+                <thead>
+                    <tr>
+                        <td>Attribute</td>
+                        <td>Values</td>
+                        <td>Description</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td ><span class="code">position:</span></td>
+                        <td>Relative, etc...</td>
+                        <td>Sets how content is positioned in a document</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">display:</span></td>
+                        <td>Block, inline-block, etc...</td>
+                        <td>Sets element as inline or box</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">padding:</span></td>
+                        <td>Top, right, bottom, left</td>
+                        <td>Space within a box surrounding the content</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">border:</span></td>
+                        <td>1px solid color</td>
+                        <td>Line element between the padding and the margin</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">margin:</span></td>
+                        <td>TRBL, in px or percent</td>
+                        <td>Space surrounding the outside border of a box</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <div><h2>Examples</h2></div>
+            <table class="bottom-table">
+                <thead>
+                    <tr>
+                        <td>Attribute</td>
+                        <td>Description</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><span class="code">border: 2px solid blue</span></td>
+                        <td> Prints a 2 px solid line around the pad of a content box</td>
+                    </tr>
+                    <tr>
+                        <td ><span class="code">margin: 0 0 10px</span></td>
+                        <td>A 10 px margin on the bottom</td>
+                    </tr>
+                    <tr>
+                        <td ><span class="code">margin: 10px 0 0</span></td>
+                        <td>A 10 px margin on top, overrides bottom margin above</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">margin: 0 auto</span></td>
+                        <td>Sets the left-right margins automatically</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">padding: 0 50px</span></td>
+                        <td>Sets a left-right pad inside the content box</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

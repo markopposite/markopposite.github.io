@@ -1,0 +1,44 @@
+/* css for box model reference */
+
+/* global styles */
+body {
+    background-color: lightgray;
+    font-family: Arial;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(35, 39, 49);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(58, 87, 101);
+}
+
+/* table styles  */
+thead tr{
+    background-color: lightblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border: 2px solid darkcyan;
+    width: 650px;
+}
+
+td {
+    border-top: 1px solid darkcyan;
+    padding: 2px 2% 2px 0;
+}
+
+/* code block styles */
+.code{
+    font-family: monospace;
+    background-color: beige;
+}
+
+
+

@@ -1,0 +1,62 @@
+/* \ */
+
+body {
+    padding:50px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+img {
+    padding-top: 20px;
+}
+
+.pagetitle{
+    font-size: 100px;
+    color: khaki;
+    text-align: center;
+    background-image: url("../pattern.jpeg");
+}
+
+.hdr{
+    font-size: 32px;
+    color: white;
+    width: 1350px;
+    font-weight: bold;
+}
+
+.emphasis{
+    font-weight: bold;
+    color:blue;
+}
+
+.fnt{
+    font-family: Helvetica;
+    font-weight: bold;
+    width: 1350px;
+}
+
+.lrg{
+    font-size: x-large ;
+}
+
+.pem{
+    font-size: 14pt;
+}
+
+#brushes{
+    background-color: mediumspringgreen;
+}
+
+#frames{
+    background-color: lightcoral;
+}
+
+#paint{
+    background-color: skyblue;
+}
+
+/* Note: My text background colors originally noly fit the text box by: 
+<div class="a"><b>Text</b></div
+a { background-color: 'color';
+}
+*/
