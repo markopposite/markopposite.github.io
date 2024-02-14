@@ -148,5 +148,4 @@ plot_marker(gageCams.features[4].geometry.coordinates, msg = both_msg)
 plot_marker(gageCams.features[5].geometry.coordinates, msg = cam_msg)
 plot_marker(gageCams.features[6].geometry.coordinates, msg = cam_msg)
 plot_marker(gageCams.features[7].geometry.coordinates, msg = cam_msg)
-plot_marker(gageCams.features[8].geometry.coordinates, msg = cam_msg)
 
