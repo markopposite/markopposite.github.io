@@ -1,0 +1,19 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [
+    {"type":"Feature","id":6,"geometry":{"type":"Point","coordinates":[-73.847292972179773,42.803696036136586]},"properties":{"OBJECTID":6,"NoteType":0,"Name":null,"Notes":null,"created_user":"MPOE","created_date":1707745100000,"last_edited_user":"MPOE","last_edited_date":1707745100000}},
+    
+    {"type":"Feature","id":7,"geometry":{"type":"Point","coordinates":[-73.887340076454421,42.851136471468564]},"properties":{"OBJECTID":7,"NoteType":0,"Name":null,"Notes":null,"created_user":"MPOE","created_date":1707745100000,"last_edited_user":"MPOE","last_edited_date":1707745100000}},
+    
+    {"type":"Feature","id":8,"geometry":{"type":"Point","coordinates":[-73.930758966211584,42.830537403050322]},"properties":{"OBJECTID":8,"NoteType":0,"Name":null,"Notes":null,"created_user":"MPOE","created_date":1707745100000,"last_edited_user":"MPOE","last_edited_date":1707745100000}},
+    
+    {"type":"Feature","id":10,"geometry":{"type":"Point","coordinates":[-73.990597731564108,42.828303457429257]},"properties":{"OBJECTID":10,"NoteType":0,"Name":null,"Notes":null,"created_user":"MPOE","created_date":1707745100000,"last_edited_user":"MPOE","last_edited_date":1707745100000}},
+    
+    {"type":"Feature","id":11,"geometry":{"type":"Point","coordinates":[-74.040830720353597,42.878306612836724]},"properties":{"OBJECTID":11,"NoteType":0,"Name":null,"Notes":null,"created_user":"MPOE","created_date":1707745100000,"last_edited_user":"MPOE","last_edited_date":1707745100000}},
+    
+    {"type":"Feature","id":12,"geometry":{"type":"Point","coordinates":[-73.943567612736828,42.820975680804757]},"properties":{"OBJECTID":12,"NoteType":0,"Name":null,"Notes":null,"created_user":"MPOE","created_date":1707745100000,"last_edited_user":"MPOE","last_edited_date":1707745100000}},
+    
+    {"type":"Feature","id":14,"geometry":{"type":"Point","coordinates":[-73.992159165176332,42.829819545652704]},"properties":{"OBJECTID":14,"NoteType":0,"Name":null,"Notes":null,"created_user":"MPOE","created_date":1707745100000,"last_edited_user":"MPOE","last_edited_date":1707745100000}},
+    
+    {"type":"Feature","id":16,"geometry":{"type":"Point","coordinates":[-73.881941570748225,42.851937719815687]},"properties":{"OBJECTID":16,"NoteType":0,"Name":null,"Notes":null,"created_user":"MPOE","created_date":1707745100000,"last_edited_user":"MPOE","last_edited_date":1707745100000}}]
+}
