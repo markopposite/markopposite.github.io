@@ -1,0 +1,203 @@
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-size: 20px; */
+}
+body{
+    background-color: black;
+    color: seashell;
+    opacity: 0.9;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    flex-shrink: 2;
+}
+/* Title and heading particulars */
+p{
+    font-size: 1.2rem;
+}
+h2, h3{
+    color: lightcoral;
+}
+.hdr h2{
+    color: seashell;
+}
+
+
+/* Top and nav sections */
+.ttl_img{
+    height: 50px;
+    overflow: hidden;
+}
+
+#stks{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    word-spacing: 45px;
+    height: 25px;
+    font-size: 1.5rem;
+    color: gray;
+    cursor: pointer;
+}
+.nav a:hover{
+    color: gray;
+    opacity: 0.8; 
+}
+
+/* Hero section */
+.splash {
+    background-image: url("./resources/vampireSplash.jpg");
+    width: auto;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border-bottom: 2px solid maroon;
+}
+.banner{
+    background-color: rgba(72, 2, 2, 0.523);
+        padding: 0 20px;
+        width:100%
+}
+
+/* Mission Statement */
+.mission {
+    width: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+/* .mission h2{
+    color: whitesmoke;
+} */
+.mission p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: whitesmoke;
+    font-style: italic;
+}
+
+/* Science and history */
+.science {
+    width: 650px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid maroon;
+}
+.science h2{
+    color: lightcoral
+}
+.science img{
+    padding: 10px 0 25px 0;
+}
+.history {
+    width: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    border-bottom: 2px solid maroon;
+    border-top: 2px solid maroon;
+    padding: 15px 0;
+}
+
+/*  Meet the team section */
+.hdr {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.team {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tm{
+    width: 350px;
+    justify-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+footer {
+    width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Media Responsiveness */
+@media only screen and (max-width: 780px){
+
+    body{
+        background-color: white;
+        color: black;
+        width: 95%;
+        display: flex;
+        flex-flow: column; 
+        align-content: center;  
+        overflow-x: hidden;
+    }
+
+    .nav{
+        justify-content: flex-start;
+        overflow-x: hidden;
+        margin-left: 20px;
+    }
+    .banner{
+        width:30%
+    }
+    .banner p{
+        text-align: left;
+    }
+    .splash{
+        display: flex;
+        flex-flow: column;
+        flex-shrink: 2;
+        align-items: center;
+        overflow-x: hidden; 
+    }
+    p{
+        /* display: flex; */
+        /* align-items: center; */
+        font-size: 1.3rem;
+        width: 75%;
+        text-align: justify;
+        overflow-wrap: scroll;
+    }
+    .mission p{
+        color: black
+    }
+    .tm,
+    .hdr,
+    footer {
+        content-visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    p{
+        /* display: flex; */
+        color:blue;
+        justify-self: flex-start;
+        font-size: 1.0rem;
+        width: 50%;
+        text-align: justify;
+        /* overflow-wrap: normal; */
+    }
+}
+
