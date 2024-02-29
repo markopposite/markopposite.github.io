@@ -1,0 +1,156 @@
+/*  */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /* max-width: 700px; */
+    /* margin: auto; */
+}
+
+body {
+    padding: 0;
+    margin: auto;
+    background-color: azure;
+    max-width: 700px;
+}
+
+/*//////////////// header ////////////////////////////////*/
+header{
+    position: fixed;
+    width: 100%;
+    max-width: 700px;
+    height: 100px;
+    background-color: rgb(8, 12, 12);
+    opacity: 0.95;
+    margin-top: auto;
+    display: grid;
+    z-index: 1;
+}
+
+.head-align{
+    display: inline-grid;
+}
+
+header .links{
+    /* display: grid; */
+    grid-column: 11 / 12 ;
+    margin-top: 10px;
+}
+
+/*//////////////// nav section //////////////////////////*/
+.links li {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5px;
+    padding: 0 5px 0 5px;
+}
+
+.links a{
+    color: rgba(239, 234, 229, 0.788);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#kaleid {
+    width: auto;
+    height: 70px;
+    margin: 5px 0 5px 5px;
+    opacity: .8;
+}
+
+#kaleid2{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+/*////////////////////// main body ///////////////////////////*/
+.grid{
+    width: 100%;
+    height: auto;
+    display: grid;
+    gap: 10px;
+    grid-template: repeat(12 50px) / repeat(12 50px); 
+}
+
+.hero{
+    margin-top: 90px;
+    width: 100%;
+    grid-area: 2/1/3/12;
+    background-image: url("../_rsrc/rain.jpg");
+}
+
+.hero-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(220, 108, 22);
+    opacity: 0.9
+}
+
+h1{
+    font-family: orbitron;
+    font-size: 3rem;
+}
+
+/*////////////////////// intro ///////////////////////////*/
+.intro-statement{
+    margin:10px;    
+    grid-area: 3/2/4/11;
+    background-color: azure;
+    font-size: 1.3rem;
+    text-align: center;
+    /* font-family: orbitron; */
+}
+
+/*////////////////////// news ///////////////////////////*/
+#link-list{
+    
+    margin:15px 0 0 50px;    
+    grid-area: 4 / 1 / 6 / 7;
+    background-color: azure;
+    display:flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.example-links li{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.example-links a {
+    text-decoration: none;
+    font-family: orbitron;
+    font-size: 1.3rem;
+    color:black;
+    font-weight: 500;
+    /* list-style-type: none; */
+}
+
+/*////////////////////// like ///////////////////////////*/
+
+.like{
+    margin:10px;    
+    grid-area: 8 / 3 /9 /11;
+    background-color: azure;
+    display: flex;
+}
+
+/* .like p{
+    
+} */
+
+/*////////////////////// column2 ///////////////////////////*/
+
+#second-splash-image{
+    grid-area: 4 / 7 / 5 /12 ;
+    margin: 15px 0 0 20px;
+}
+
+#snow{
+    width: 300px;
+    height: auto;
+    /* max-height: 500px; */
+}
+
+/* Note: the screen looks good at 700px width, otherwise need to adjust */

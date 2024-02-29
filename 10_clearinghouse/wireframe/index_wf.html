@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>LIS Data Clearinghouse</title>
+
+        <meta name="Wireframe Clearinghouse for GIS Data" content="">
+        <!-- <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- web leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+        <!-- standard css -->
+        <link rel="stylesheet" href="./_css/leafletStyle.css"/>
+        <link rel="stylesheet" href="./_css/styles_wf.css">
+
+        <!-- standard js -->
+        <script src="./_js/ancillaryControl.js" defer></script>
+    </head>
+
+    <body>
+        <!-- <script src="./dynamics_wf.js" async defer></script> -->
+
+        <div class="header">
+            <div class="head-align">
+
+                <a href="#">
+                    <img src="./Resources/usgs-placeholder_0.png" alt="logo">
+                </a>
+
+                <nav class="links">
+                    <ul>
+                        <li><a href="#form-section">Watershed</a></li>
+                        <li><a href="#watershed">Source</a></li>
+                        <li><a href="#sources">Mapper</a></li>
+                        <li><a href="#subgroups">Layers</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="grid">
+
+            <div class="hero">
+                <img src="./Resources/LongIslandWatertableMap.jpg" alt="long-island">
+                
+                <div class="ttl_srch">
+                    <h1>LIS Clearinghouse</h1>
+                    <!-- <form action="./Resources/searchForm.txt"> -->
+                    <input aria-label class inputmode='text' placeholder="Search data" type="text" id="search">
+                </div>
+            </div>
+
+            <section class="form-section" id="form-section">
+                <form>
+
+                        <div class="datalist">
+                            <label for="list1">Categories:</label>
+                            <input id="'list1" list="cat1" placeholder="Search By Category">
+                            <datalist id="cat1">
+                                <option>Ocean</option>
+                                <option>Estuary</option>
+                                <option>River</option>
+                                <option>Lake</option>
+                                <option>Groundwater</option>
+                                <option>Land</option>
+                                <option>Facility</option>
+                                <option>Air</option>
+                                <option>All-Water</option>
+                                <option>Environmental</option>
+                            </datalist>
+                            <br>
+                        </div>
+
+                        <div class="datalist">
+                            <label for="list2" >Subcategories:</label>
+                            <input id="'list2" list="cat2" placeholder="Search By Subcategory">
+                            <datalist id="cat2">
+                                <option>Wastewater</option>
+                                <option>Stormwater</option>
+                                <option>Biodiversity</option>
+                                <option>Biological-Animal</option>
+                                <option>Biological-Plant</option>
+                                <option>Water Withdrawal</option>
+                                <option>Soils</option>
+                                <option>Geology</option>
+                                <option>Elevation</option>
+                                <option>Bathymetry</option>
+                                <option>Imagery</option>
+                                <option>Recreation</option>
+                                <option>Model</option>
+                                <option>Wetlands</option>
+                                <option>Hazardous Waste</option>
+                                <option>Environmental Justice</option>
+                                <option>Remediation</option>
+                                <option>Dams</option>
+                                <option>Water Quality Monitoring</option>
+                                <option>Air Quality Monitoring</option>
+                                <option>Forestry</option>
+                                <option>Boundary</option>
+                                <option>Watershed Boundary</option>
+                                <option>Meteorological</option>
+                                <option>Hurricane</option>
+                                <option>Flood</option>
+                                <option>Land Cover</option>
+                                <option>Storage Tanks</option>
+                                <option>Energy</option>
+                                <option>Other</option>
+                            </datalist>
+                            <br>
+                        </div>
+
+                        <div class="datalist">
+                            <label for="list3">State:</label>
+                            <input id="'list3" list="cat3" placeholder="Search By State">
+                            <datalist id="cat3">
+                                <option>New York</option>
+                                <option>New Hampshire</option>
+                                <option>Massachusetts</option>
+                                <option>Connecticut</option>
+                                <option>Vermont</option>
+                                <option>Rhode Island</option>                 
+                            </datalist>
+                            <br>
+                        </div>
+
+                    <!-- <div class="datalist">
+                        <label for="list4">Feature Layer: </label>
+                        <input id="'list4" list="cat4" placeholder="Search By Layer Type">
+                        <datalist id="cat4">
+                            <option>Feature Layer</option>
+                            <option>WMS</option>
+                            <option>Dynamic Layer</option>
+                            <option>Image Server</option>
+                            <option>Shape File</option>
+                            <option>API</option>                 
+                        </datalist>
+                        <br>
+                    </div>
+                    <br> -->
+                    
+                    <div class="submit-button" >
+                        <!-- <label for="submit">Submit</label> -->
+                        <!-- <input id='submit-button' type="submit"> -->
+                        <input type="submit" form="form-section" id="submit" value="Submit">
+                        <!-- <input type="reset" id="clear"  value="clear"> -->
+                    </div>
+                    
+                </form>
+            </section>
+
+            <div class="info">
+
+                <div id="watershed">
+                    <h2>Long Island Sound Watershed</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed orci semper, accumsan mi et, porttitor turpis. Donec id interdum urna. Proin nibh ipsum, venenatis vel blandit id, lacinia eu metus. Nullam ut suscipit augue. Proin porta risus felis, eu pretium augue fringilla rutrum. Proin non sagittis urna, eget feugiat lectus.</p>
+                    <ul>
+                        <li>ionterdum et malesuada</li>
+                        <li>sagittis urna, eget feugiat</li>
+                        <li>imis in faucibus</li>
+                    </ul>
+                </div>
+
+                <div id="sources">
+                    <h2>Metadata Sources</h2> 
+
+                    <p>Maecenas quis semper erat. Vestibulum vestibulum pretium commodo. Integer urna leo, ultrices sit amet velit at, accumsan fringilla est. Curabitur ac rutrum justo. Aliquam id tristique risus. Pellentesque tempus quam eu erat ullamcorper finibus. Nullam ornare felis quis diam convallis luctus. Duis hendrerit sit amet lacus eu rhoncus. Nulla facilisi. Aenean accumsan tortor at mi lobortis, sed faucibus magna finibus. Aenean commodo, nisi eget sollicitudin aliquet, magna est hendrerit nulla, gravida blandit diam dolor quis turpis. Proin lobortis auctor orci, non consectetur magna faucibus a</p>
+                </div>
+
+                <div id="mapper">
+                    <h2>Metadata Mapper</h2>   
+
+                    <div class="map-control">
+                        <div class="card-body">
+                            <span id="mapTitle" class="plot-title card-title"></span>
+                            <div id="map">
+                                <script src="./_js/mapControlLeaflet.js"></script>
+                                <!-- <script src="D:/mpoed/coding_envs/Repos/WebDev/Testing/LeafletTest/LeafletTest.js"></script> -->
+                            </div>
+                            <div id="legend" class="mt-2"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="line"></div>
+
+            <div class="groups">
+                <h3>Browse by Category</h3>
+                <div class="box-container" >
+                    <a><div class="boxes" id="Ocean">Ocean</div></a>
+                    <a><div class="boxes" id="Estuary">Estuary</div></a>
+                    <a><div class="boxes" id="River">River</div></a>
+                    <a><div class="boxes" id="Lake">Lake</div></a>
+                    <a><div class="boxes" id="Groundwater">Groundwater</div></a>
+                    <a><div class="boxes" id="Land">Land</div></a>
+                <!-- </div>
+                <div class="box-container"></div> -->
+                    <a><div class="boxes" id="Facility">Facility</div></a>
+                    <a><div class="boxes" id="Air">Air</div></a>
+                    <a><div class="boxes" id="All-Water">All-Water</div></a>
+                    <a><div class="boxes" id="Environmental">Environmental</div></a>
+                </div>
+            </div>
+
+            <div class="subgroups" id="subgroups">
+                <h3>Browse by Layer</h3>
+                <div class="box-container2" >
+                <a><div class="boxes" id="water-quality">Feature</div></a>
+                <a><div class="boxes" id="biodiv">WMS</div></a>
+                <a><div class="boxes" id="imagery">Dynamic</div></a>
+                <a><div class="boxes" id="soils">Image Server</div></a>
+                <a><div class="boxes" id="energy">Shape File</div></a>
+                <a><div class="boxes" id="energy">API</div></a>
+            </div>
+   
+
+
+        </div>
+
+        <div class="footer">
+            <div class="foot-align">
+
+                <img src="./Resources/usgs-placeholder_0.png" alt="logo">
+                <nav class="links">
+                    <ul>
+                        <li><a href="https://www.usgs.gov/" target="_blank">USGS</a></li>
+                        <li><a href="https://www.usgs.gov/centers/new-york-water-science-center" target="_blank">NYWSC</a></li>
+                        <li><a href="https://www.usgs.gov/programs/national-geospatial-program/national-map" 
+                            target="_blank">USGS National Map</a></li>
+                        <li><a href="#">ArcGIS</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </body>
+</html>

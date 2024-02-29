@@ -1,0 +1,27 @@
+Hello and welcome to my example page for web development. My name is Mark and I have been studying this topic on Codecademy to fulfill a need at a science agency that I work for. Click on the links to see examples.
+Hi my name is Mark, welcome to my example page for web development!
+                and I have been studying this topic on Codecademy to fulfill a need at a science agency that I work for. 
+                Click on the links to see examples.
+
+
+include in header when ready
+<!-- <li>Music</li>
+<li>Martial Arts</li>
+<li>Motorcycles</li>
+<li>Art</li> -->
+
+
+footer:
+<!-- <ul class="footer-links">
+<li><a></a></li>
+<li><a></a></li>
+<li><a></a></li>
+</ul> -->
+
+? 
+/* .orbitron-<uniquifier> {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */

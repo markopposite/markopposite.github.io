@@ -1,0 +1,9 @@
+
+
+Feature Layer
+WMS
+Dynamic Layer
+Image Server
+Shape File
+API      
+                     

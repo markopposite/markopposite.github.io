@@ -1,0 +1,20 @@
+/* Leaflet css */
+#map { 
+    display: flex;
+    flex-grow: 1 2;
+    min-height: 300px; 
+    max-height: 800px;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+/* .card-body #mapTitle{
+    margin-top: 500px;
+    z-index: 10;
+}
+
+.map{
+
+    z-index: -1;
+} */
